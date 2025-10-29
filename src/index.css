@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-rubik: 'Rubik Marker Hatch', cursive;
+  --font-modak: "Modak", system-ui;
+  --font-dynalight: "Dynalight", cursive;
+}
+
+
+#root {
+  background-color: rgba(235, 238, 237, 0.432);
+  overflow-y: auto;
+}
