@@ -1,5 +1,6 @@
 import { useModal } from "../hooks/useModal"
 import { motion, AnimatePresence } from "motion/react";
+import { IoMdClose } from "react-icons/io";
 
 export function DrawingModal(){
     const { close, selectedDrawing } = useModal();
@@ -18,11 +19,11 @@ export function DrawingModal(){
                         duration: 0.4
                     }}
                     exit={{ y: 40, opacity: 0 }}
-                    className = 'shadow-md flex relative max-w-[500px] w-full max-h-[1200px] h-[800px] bg-white rounded-2xl shadow-md mx-4'
+                    className = ' h-[90%] dark:bg-neutral-950 shadow-md flex relative md:max-w-[500px] w-full md:max-h-[1200px] md:h-[800px] bg-white rounded-2xl shadow-md mx-4'
                 >
                     <div className = 'flex gap-4 flex-col p-4'>
                         <div className = 'pb-2'>
-                            <div className ='text-xl font-bold'>
+                            <div className ='dark:text-white text-xl font-bold'>
                                 {selectedDrawing.name} | {selectedDrawing.universe}
                             </div>
                             <div className = 'text-gray-400 text-xs'>
@@ -31,16 +32,16 @@ export function DrawingModal(){
                         </div>
                         <img className = 'rounded-xl object-cover' src={selectedDrawing.imageUrl} alt="" />
                         <div className = 'flex flex-col grow overflow-hidden'>
-                            <div className = ' overflow-y-auto p-4 grow bg-teal-50 text-teal-900 border border-teal-500/30 rounded-xl  '>
+                            <div className = 'dark:bg-teal-950 dark:text-white/50 overflow-y-auto p-4 grow bg-teal-50 text-teal-900 border border-teal-500/30 rounded-xl  '>
                                 {selectedDrawing.description}
                             </div>
                         </div>
                     </div>
                     <div
-                        className = ' cursor-pointer absolute top-4 right-8 font-bold border w-8 h-8  rounded-xl border-gray-400 text-gray-400 flex justify-center items-center cursor-pointer'
+                        className = ' right-4 cursor-pointer absolute top-4 md:right-8 font-bold border w-8 h-8  rounded-xl border-gray-400 text-gray-400 flex justify-center items-center cursor-pointer'
                         onClick = {close}
                     >
-                        x
+                        <IoMdClose />
                     </div>
                 </motion.div>
         </div>

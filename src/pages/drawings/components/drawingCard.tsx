@@ -26,17 +26,17 @@ export function DrawingCard(props: DrawingCardProps){
        
             style={width >= 500 ? {width:`${width / 3 - 7}px`}: {width: `calc(100% - 8px) `}}
             //className = {`hover:cursor-pointer snap-center flex-shrink-0 bg-white px-2 pt-2 pb-4 shadow-md rounded-sm`}>
-            className = {`snap-center hover:cursor-pointer flex-shrink-0 bg-white px-2 pt-2 pb-4 shadow-md rounded-sm`}>
+            className = {`dark:bg-neutral-950 snap-center hover:cursor-pointer flex-shrink-0 bg-white px-2 pt-2 pb-4 shadow-md rounded-sm`}>
             <img
                 className = 'rounded-md border border-gray-200 ' 
                 src={imageUrl} alt={name} 
             />
 
-            <div className = 'text-center'>
-                <h3 className="text-teal-600 ">
+            <div className = 'mt-1 text-center'>
+                <h3 className="dark:text-teal-400 font-bold text-teal-600 ">
                     {name}
                 </h3>
-                <h4 className="text-gray-400 text-xs">
+                <h4 className="dark:text-white/80 text-gray-400 text-xs">
                     {date}
                 </h4>
             </div>

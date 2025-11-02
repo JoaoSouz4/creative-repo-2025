@@ -15,7 +15,7 @@ export function Gallery({groupName, drawingsList}: GalleryProps){
     return (
         <div>
             <div className = 'flex items-center justify-between'>
-                <h2 className = 'text-xl font-bold text-gray-500'>{groupName}</h2>
+                <h2 className = 'dark:text-teal-400 text-xl font-bold text-gray-500'>{groupName}</h2>
                 <GalleryNavigate/>
             </div>
 

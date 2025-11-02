@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export function Footer(){
     return (
-        <footer className = 'mt-8 w-full bg-teal-950 px-8 py-8 flex justify-center'>
+        <footer className = 'dark:bg-neutral-950 mt-8 w-full bg-teal-950 px-8 py-8 flex justify-center'>
             <div className = 'w-[700px]'>
                 <div className = 'flex justify-between items-start'>
                     <div className = 'relative text-white/90 text-2xl'>
