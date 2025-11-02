@@ -28,7 +28,7 @@ export function DrawingCard(props: DrawingCardProps){
             //className = {`hover:cursor-pointer snap-center flex-shrink-0 bg-white px-2 pt-2 pb-4 shadow-md rounded-sm`}>
             className = {`dark:bg-neutral-950 snap-center hover:cursor-pointer flex-shrink-0 bg-white px-2 pt-2 pb-4 shadow-md rounded-sm`}>
             <img
-                className = 'rounded-md border border-gray-200 ' 
+                className = 'rounded-2xl  border border-gray-200 ' 
                 src={imageUrl} alt={name} 
             />
 

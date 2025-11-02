@@ -23,7 +23,7 @@ export function DrawingModal(){
                 >
                     <div className = 'flex gap-4 flex-col p-4'>
                         <div className = 'pb-2'>
-                            <div className ='dark:text-white text-xl font-bold'>
+                            <div className ='text-md dark:text-white md:text-xl font-bold'>
                                 {selectedDrawing.name} | {selectedDrawing.universe}
                             </div>
                             <div className = 'text-gray-400 text-xs'>
