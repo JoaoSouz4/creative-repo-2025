@@ -19,7 +19,7 @@ export function DrawingModal(){
                         duration: 0.4
                     }}
                     exit={{ y: 40, opacity: 0 }}
-                    className = ' h-[90%] dark:bg-neutral-950 shadow-md flex relative md:max-w-[500px] w-full md:max-h-[1200px] md:h-[800px] bg-white rounded-2xl shadow-md mx-4'
+                    className = ' h-[90%] dark:bg-neutral-950 shadow-md flex relative max-w-[400px] md:max-w-[500px] w-full md:max-h-[1200px] lg:h-[800px] bg-white rounded-2xl shadow-md mx-4'
                 >
                     <div className = 'flex gap-4 flex-col p-4'>
                         <div className = 'pb-2'>
@@ -30,7 +30,9 @@ export function DrawingModal(){
                                 Feito em: {selectedDrawing.date}
                             </div>
                         </div>
-                        <img className = 'rounded-xl object-cover' src={selectedDrawing.imageUrl} alt="" />
+
+                        <img className = 'rounded-xl object-cover h-[60%] md:w-full object-cover' src={selectedDrawing.imageUrl}/>
+
                         <div className = 'flex flex-col grow overflow-hidden'>
                             <div className = 'dark:bg-teal-950 dark:text-white/50 overflow-y-auto p-4 grow bg-teal-50 text-teal-900 border border-teal-500/30 rounded-xl  '>
                                 {selectedDrawing.description}
