@@ -7,7 +7,7 @@ export function Footer(){
             <div className = 'w-[700px]'>
 
                 <div className = 'flex md:flex-row justify-between items-start'>
-                    <div className = 'opacity-[60%] relative text-white/90 text-2xl'>
+                    <div className = 'opacity-[60%] relative text-white text-2xl'>
                         <div className = 'font-modak text-xs md:text-sm'>Repositório Criativo</div>
                         <div className = 'font-dynalight text-xs md:text-sm text-white/90 absolute left-0 top-4 md:top-6'>
                             By: João Souza
@@ -18,7 +18,7 @@ export function Footer(){
                     </div>
 
                     <div className = 'text-white'>
-                        <h2 className = 'text-xs md:text-xl'>Contato do desenvolvedor</h2>
+                        <h2 className = 'text-xs md:text-lg'>Contato do desenvolvedor</h2>
                         <ul className = 'text-xs md:text-sm'>
                             <li className = 'text-white/50'>Email: joaosouz8@gmail.com</li>
                             <li className = 'text-white/50'>Telefone: 69 99348-5751</li>
