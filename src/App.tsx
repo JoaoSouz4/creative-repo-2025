@@ -1,7 +1,7 @@
 import { Layout } from "./components/layout"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Drawings } from "./pages/drawings";
-import { About } from "./pages/about";
+import { About } from "./pages/About";
 
 function App() {
   return (
