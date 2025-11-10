@@ -7,7 +7,6 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { AtomicElectron } from './components/atomic-eletron';
-import { BsType } from 'react-icons/bs';
 
 export function About(){
     return (
@@ -25,7 +24,7 @@ export function About(){
                             <div className = ' flex flex-col gap-2 text-black/50 text-sm'>
                                 <li className = 'flex items-center gap-2'>
                                     <RiCodeView className = 'text-teal-500'/>
-                                    Dev Full Stack | TS | C#
+                                    Dev Full Stack | React | C#
                                 </li>
                                 <li className = 'flex items-center gap-2'>
                                     <FaCakeCandles className = 'text-teal-500'/>
